@@ -1,0 +1,57 @@
+@import "default";
+@import "headfoot";
+
+#Partner {
+    @extend %H1;
+
+    .partnerTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        h4 {
+            max-width: 500px;
+            color: $darkpurple;
+            line-height: 36px;
+            font-weight: 600;
+        }
+
+        select {
+            background: #FFFFFF;
+            border: 1px solid #E6E6E6;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px 10px;
+            outline: none;
+            max-width: 300px;
+            width: 100%;
+        }
+    }
+    .logoBox{
+        margin: 20px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        // height: 120px;
+        img{
+            width: 100%;
+            padding: 30px;
+            // height: 60px;
+            object-fit: contain;
+            transition: all .5s;
+            
+        }
+        a{
+            &:hover{
+                img{
+                    filter: grayscale(80%);
+                    transition: all .5s;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+@import "default";
+@import "headfoot";
+
+#About {
+    .aboutTop {
+        padding-left: 150px;
+    }
+
+    @extend %H1;
+
+    h4 {
+        max-width: 500px;
+        color: $darkpurple;
+        line-height: 36px;
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+
+    .Numb {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 68px;
+        color: $darkpurple;
+    }
+
+    .numbText {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40.8px;
+        color: $secgray;
+    }
+}
+
+.aboutText {
+    p {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 170%;
+        letter-spacing: -0.02em;
+        color: $secgray;
+    }
+}
+
+.aboutImg {
+    width: 100%;
+    height: 356px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aboutPurple {
+    border-radius: 10px;
+    padding: 50px;
+    background-color: $darkpurple;
+    position: relative;
+    margin: 40px auto;
+
+    .text {
+        font-weight: 300;
+        font-style: normal;
+        font-style: 16px;
+        line-height: 27.2px;
+        color: #fff;
+
+    }
+
+    img {
+        filter: blur(4px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        height: 100%;
+    }
+
+    .aboutList {
+        display: flex;
+        // position: absolute;
+        // left: 50%;
+        // transform: translateX(-50%);
+        justify-content: center;
+    }
+ul{
+    padding-left: 0;
+}
+    .first,
+    .second {
+        li {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 15px;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 14.7436px 2.94872px;
+            list-style: none;
+            display: block;
+            width: 160px;
+            padding: 9px;
+            margin: 35px 10px;
+
+
+
+        }
+
+    }
+
+    .first {
+        li {
+            &:nth-child(2) {
+                margin-left: -20px;
+            }
+        }
+    }
+
+    .second {
+        li {
+            &:nth-child(2) {
+                margin-left: 35px;
+            }
+        }
+    }
+}
+
+.second-section {
+    margin: 80px 0;
+
+    .item_in {
+        img {
+            width: 130px !important;
+            margin: auto;
+            height: 60px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        font-size: 34px !important;
+        color: $gray !important;
+        position: absolute;
+        top: 0px;
+
+        &:focus {
+            background-color: white !important;
+            outline: none !important;
+        }
+
+        &:hover {
+            background-color: white !important;
+        }
+    }
+
+    .owl-prev {
+        left: 0 !important;
+    }
+
+    .owl-next {
+        right: 0 !important;
+    }
+
+    .owl-dot {
+        display: none !important;
+    }
+}
+
+.aboutTextSec {
+    padding-left: 150px;
+
+    p {
+        font-size: 20px;
+        line-height: 170%;
+        font-weight: 300;
+        color: $secgray;
+        letter-spacing: -0.02em;
+        margin: 20px 0;
+        strong{
+            font-weight: bold;
+        }
+    }
+    .bigText{
+        font-weight: 300;
+font-size: 40px;
+line-height: 60px;
+/* or 60px */
+
+letter-spacing: -0.02em;
+position: relative;
+
+color: $purple;
+        img{
+            width: 40px;
+            height: 25px;
+            object-fit: contain;
+            position: absolute;
+            top: 15px;
+left: -50px;
+        }
+        strong{
+            font-weight: bold;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .aboutTop{
+        padding-left: 20px!important;
+    }
+    
+    .aboutTextSec{
+        padding-left: 50px!important;
+    }
+}
+@media(max-width: 575px){
+    .aboutPurple img{
+        height: auto;
+    }
+    .aboutList{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        li{
+            margin: 10px 0!important;
+        }
+    }
+}

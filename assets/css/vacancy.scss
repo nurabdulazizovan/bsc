@@ -1,0 +1,252 @@
+@import "default";
+@import "headfoot";
+
+#Vacancy {
+    @extend %H1;
+
+    h4 {
+        max-width: 500px;
+        color: $darkpurple;
+        line-height: 36px;
+        font-weight: 600;
+        margin-bottom: 38px;
+    }
+
+    .vacancyBox {
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+
+        .vacancyTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            p {
+                background-color: rgba(29, 0, 66, 0.05);
+                border-radius: 16px;
+                color: $darkpurple;
+                margin-bottom: 0;
+                padding: 5px 10px;
+            }
+
+            span {
+                font-family: Work Sans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $secgray;
+            }
+
+        }
+
+        .vacancyMiddle {
+            margin-bottom: 30px;
+
+            h4 {
+                font-family: Work Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: $darkpurple;
+            }
+
+            p {
+                font-family: Work Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 150%;
+                color: $secgray;
+                display: inline-block;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+        }
+
+        .vacancyBottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .manat {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: $darkpurple;
+            }
+
+
+
+            a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: $darkpurple;
+
+                .right {
+                    width: 30px;
+                    transition: all .5s;
+                    opacity: 1;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+#Vacancy-detail {
+    .detailTop {
+        h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: $secgray;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: $darkpurple;
+
+        }
+
+        span {
+            background-color: rgba(29, 0, 66, 0.05);
+            padding: 10px 15px;
+            border-radius: 32px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            color: $darkpurple;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .vacancyDetailText {
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        h4 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $darkpurple;
+            text-transform: uppercase;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+
+        li {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 200%;
+            margin-left: 30px;
+            color: $gray;
+        }
+    }
+}
+
+.applyBox {
+    ul {
+        background: #FFFFFF;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 24px;
+
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+
+            span {
+                text-align: left;
+                flex-basis: 0;
+                flex-grow: 1;
+                flex-shrink: 1;
+
+                &:first-child {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $darkpurple;
+                }
+
+                &:last-child {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    a {
+        background: $darkpurple;
+        padding: 12px;
+        color: #fff;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        transition: all .5s;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $secgray;
+            transition: all .5s;
+        }
+    }
+
+    margin-bottom: 30px;
+}
+@media(max-width: 991px){
+    .respVacancy{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 575px) {
+    .applyBox li {
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+        flex-direction: column;
+    }
+}
